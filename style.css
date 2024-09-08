@@ -1,0 +1,29 @@
+:root {
+  --ff-poppins: "Poppins";
+
+  --clr-red: hsl(0, 100%, 74%);
+  --clr-green: hsl(154, 59%, 51%);
+  --clr-blue: hsl(248, 32%, 49%);
+  --clr-darkBlue: hsl(249, 10%, 26%);
+  --clr-grayishBlue: hsl(246, 25%, 77%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(images/bg-intro-desktop.png), var(--clr-red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  /* width: 100vh; */
+  height: 100vh;
+}
+
+#text-box {
+  display: flex;
+  flex-direction: column;
+}
