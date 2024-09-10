@@ -45,13 +45,29 @@
       </div>
       <div id="submit-box">
         <div class="header">
-          <p>Try it free 7 days then $20/mo. thereafter</p>
+          <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
         </div>
         <div class="form">
-          <input type="text" placeholder="First Name" />
-          <input type="text" placeholder="Last Name" />
-          <input type="email" placeholder="Email Address" />
-          <input type="password" name="" id="pass" placeholder="Password" />
+          <input type="text" name="first" id="first" placeholder="First Name" />
+          <input type="text" name="last" id="last" placeholder="Last Name" />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Address"
+            autocomplete="off"
+          />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+          />
+          <button id="btn">CLAIM YOUR FREE TRIAL</button>
+          <p>
+            By clicking the button, you are agreeing to our
+            <strong>Terms and Services</strong>
+          </p>
         </div>
       </div>
     </div>
@@ -61,7 +77,7 @@
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="#">Jonathan Moody</a>.
       </p>
     </footer>
   </body>
