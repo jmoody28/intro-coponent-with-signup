@@ -19,13 +19,14 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
-  /* width: 100vh; */
-  height: 100vh;
 }
 
 #container {
   display: flex;
+  width: min(1000px, 80%);
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
 }
 
 #text-box,
@@ -34,18 +35,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 500px;
-  padding: 10px;
+  width: min(450px, 100%);
+  padding: 30px;
 }
 
 #text-box > h1 {
   font-family: var(--ff-poppins);
   color: aliceblue;
   margin-bottom: 15px;
-  text-align: left;
-  font-size: 40px;
-  /* max-width: 430px; */
-  /* word-wrap: break-word; */
 }
 
 #text-box > p {
@@ -55,21 +52,18 @@ body {
   color: aliceblue;
 }
 
-/* #submit-box {}  */
-
 .header {
   background-color: var(--clr-blue);
   padding: 15px 30px;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 1px 8px 10px rgba(94, 94, 94, 0.5);
   margin-bottom: 20px;
-  width: 400px;
+  width: min(450px, 90%);
 }
 
 .header > p {
   font-family: var(--ff-poppins);
   font-size: 14px;
-  /* font-weight: 400; */
   color: aliceblue;
   text-align: center;
 }
@@ -78,18 +72,17 @@ body {
   display: flex;
   flex-direction: column;
   background-color: white;
-  width: 400px;
-  max-width: 400px;
+  width: min(450px, 90%);
   padding: 30px;
   padding-top: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 input {
   font-family: var(--ff-poppins);
   font-weight: 400;
   padding: 10px;
-  border-radius: 3px;
+  border-radius: 5px;
   border: 1px solid var(--clr-grayishBlue);
   margin-top: 20px;
 }
@@ -141,6 +134,7 @@ input:focus {
   font-family: var(--ff-poppins);
   font-size: 10px;
   color: var(--clr-grayishBlue);
+  text-align: center;
 }
 
 #btn + p > strong {
@@ -149,4 +143,22 @@ input:focus {
 
 footer {
   margin-top: 40px;
+}
+
+@media (max-width: 780px) {
+  #container {
+    flex-direction: column;
+  }
+
+  #text-box {
+    text-align: center;
+  }
+
+  #text-box > h1 {
+    font-size: 130%;
+  }
+
+  #text-box > p {
+    font-size: 80%;
+  }
 }
